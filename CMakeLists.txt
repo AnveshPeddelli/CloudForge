@@ -5,6 +5,8 @@ project(cloudForge VERSION 0.1.0 LANGUAGES CXX)
 # Reusable processing library
 add_library(cloudforge_core
     src/voxel_grid.cpp
+    src/synthetic.cpp
+    src/pcd_io.cpp
 )
 
 target_include_directories(cloudforge_core PUBLIC include)

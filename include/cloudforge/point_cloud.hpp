@@ -12,7 +12,7 @@ namespace cloudforge
         double z{};
     };
 
-    using PointCloud = std::vector<Point>;;
+    using PointCloud = std::vector<Point>;
 
     [[nodiscard]] PointCloud downsample(const PointCloud& cloud, double voxel_size);
     

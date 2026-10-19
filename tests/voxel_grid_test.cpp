@@ -126,3 +126,58 @@ TEST(VoxelGrid, RejectsVoxelIndexOverflow)
         static_cast<void>(cloudforge::downsample(input, 1.0)),
         std::out_of_range);
 }
+
+TEST(VoxelGrid, SupportsConfigurableVoxelSize)
+{
+    const cloudforge::PointCloud input{
+        {0.10, 0.0, 0.0},
+        {0.40, 0.0, 0.0},
+        {0.60, 0.0, 0.0}
+    };
+
+    const auto output = cloudforge::downsample(input, 0.5);
+
+    ASSERT_EQ(output.size(), 2u);
+    EXPECT_NEAR(output[0].x, 0.25, 1e-12);
+    EXPECT_NEAR(output[1].x, 0.60, 1e-12);
+}
+
+TEST(VoxelGrid, GroupsUsingAllThreeAxes)
+{
+    const cloudforge::PointCloud input{
+        {0.25, 0.25, 0.25},
+        {0.25, 0.25, 1.25},
+        {0.25, 1.25, 0.25}
+    };
+
+    const auto output = cloudforge::downsample(input, 1.0);
+
+    ASSERT_EQ(output.size(), 3u);
+
+    EXPECT_DOUBLE_EQ(output[0].z, 0.25);
+    EXPECT_DOUBLE_EQ(output[1].z, 1.25);
+    EXPECT_DOUBLE_EQ(output[2].y, 1.25);
+}
+
+TEST(VoxelGrid, RepeatsResultsForIdenticalInput)
+{
+    const cloudforge::PointCloud input{
+        {1.2, 0.2, 0.3},
+        {0.1, 0.2, 0.3},
+        {1.4, 0.4, 0.5},
+        {0.3, 0.4, 0.5}
+    };
+
+    const auto first = cloudforge::downsample(input, 1.0);
+    const auto second = cloudforge::downsample(input, 1.0);
+
+    ASSERT_EQ(first.size(), 2u);
+    ASSERT_EQ(first.size(), second.size());
+
+    for(std::size_t i = 0; i < first.size(); ++i)
+    {
+        EXPECT_EQ(first[i].x, second[i].x);
+        EXPECT_EQ(first[i].y, second[i].y);
+        EXPECT_EQ(first[i].z, second[i].z);
+    }
+}
