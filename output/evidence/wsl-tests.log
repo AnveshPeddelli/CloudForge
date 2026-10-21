@@ -1,0 +1,1110 @@
+Start testing: Oct 21 14:32 UTC
+----------------------------------------------------------
+1/41 Testing: VoxelGrid.ComputesCentroidForSharedVoxel
+1/41 Test: VoxelGrid.ComputesCentroidForSharedVoxel
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_tests" "--gtest_filter=VoxelGrid.ComputesCentroidForSharedVoxel" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"VoxelGrid.ComputesCentroidForSharedVoxel" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = VoxelGrid.ComputesCentroidForSharedVoxel
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VoxelGrid
+[ RUN      ] VoxelGrid.ComputesCentroidForSharedVoxel
+[       OK ] VoxelGrid.ComputesCentroidForSharedVoxel (0 ms)
+[----------] 1 test from VoxelGrid (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"VoxelGrid.ComputesCentroidForSharedVoxel" end time: Oct 21 14:32 UTC
+"VoxelGrid.ComputesCentroidForSharedVoxel" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/41 Testing: VoxelGrid.SeparatesNegativeAndNonnegativeVoxels
+2/41 Test: VoxelGrid.SeparatesNegativeAndNonnegativeVoxels
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_tests" "--gtest_filter=VoxelGrid.SeparatesNegativeAndNonnegativeVoxels" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"VoxelGrid.SeparatesNegativeAndNonnegativeVoxels" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = VoxelGrid.SeparatesNegativeAndNonnegativeVoxels
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VoxelGrid
+[ RUN      ] VoxelGrid.SeparatesNegativeAndNonnegativeVoxels
+[       OK ] VoxelGrid.SeparatesNegativeAndNonnegativeVoxels (0 ms)
+[----------] 1 test from VoxelGrid (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"VoxelGrid.SeparatesNegativeAndNonnegativeVoxels" end time: Oct 21 14:32 UTC
+"VoxelGrid.SeparatesNegativeAndNonnegativeVoxels" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/41 Testing: VoxelGrid.HandlesEmptyInput
+3/41 Test: VoxelGrid.HandlesEmptyInput
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_tests" "--gtest_filter=VoxelGrid.HandlesEmptyInput" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"VoxelGrid.HandlesEmptyInput" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = VoxelGrid.HandlesEmptyInput
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VoxelGrid
+[ RUN      ] VoxelGrid.HandlesEmptyInput
+[       OK ] VoxelGrid.HandlesEmptyInput (0 ms)
+[----------] 1 test from VoxelGrid (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"VoxelGrid.HandlesEmptyInput" end time: Oct 21 14:32 UTC
+"VoxelGrid.HandlesEmptyInput" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/41 Testing: VoxelGrid.HandlesExactBoundaries
+4/41 Test: VoxelGrid.HandlesExactBoundaries
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_tests" "--gtest_filter=VoxelGrid.HandlesExactBoundaries" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"VoxelGrid.HandlesExactBoundaries" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = VoxelGrid.HandlesExactBoundaries
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VoxelGrid
+[ RUN      ] VoxelGrid.HandlesExactBoundaries
+[       OK ] VoxelGrid.HandlesExactBoundaries (2 ms)
+[----------] 1 test from VoxelGrid (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (2 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"VoxelGrid.HandlesExactBoundaries" end time: Oct 21 14:32 UTC
+"VoxelGrid.HandlesExactBoundaries" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/41 Testing: VoxelGrid.CollapsesDuplicatePoints
+5/41 Test: VoxelGrid.CollapsesDuplicatePoints
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_tests" "--gtest_filter=VoxelGrid.CollapsesDuplicatePoints" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"VoxelGrid.CollapsesDuplicatePoints" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = VoxelGrid.CollapsesDuplicatePoints
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VoxelGrid
+[ RUN      ] VoxelGrid.CollapsesDuplicatePoints
+[       OK ] VoxelGrid.CollapsesDuplicatePoints (0 ms)
+[----------] 1 test from VoxelGrid (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"VoxelGrid.CollapsesDuplicatePoints" end time: Oct 21 14:32 UTC
+"VoxelGrid.CollapsesDuplicatePoints" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/41 Testing: VoxelGrid.RejectsInvalidVoxelSizes
+6/41 Test: VoxelGrid.RejectsInvalidVoxelSizes
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_tests" "--gtest_filter=VoxelGrid.RejectsInvalidVoxelSizes" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"VoxelGrid.RejectsInvalidVoxelSizes" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = VoxelGrid.RejectsInvalidVoxelSizes
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VoxelGrid
+[ RUN      ] VoxelGrid.RejectsInvalidVoxelSizes
+[       OK ] VoxelGrid.RejectsInvalidVoxelSizes (6 ms)
+[----------] 1 test from VoxelGrid (6 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (6 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"VoxelGrid.RejectsInvalidVoxelSizes" end time: Oct 21 14:32 UTC
+"VoxelGrid.RejectsInvalidVoxelSizes" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/41 Testing: VoxelGrid.RejectsMalformedCoordinates
+7/41 Test: VoxelGrid.RejectsMalformedCoordinates
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_tests" "--gtest_filter=VoxelGrid.RejectsMalformedCoordinates" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"VoxelGrid.RejectsMalformedCoordinates" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = VoxelGrid.RejectsMalformedCoordinates
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VoxelGrid
+[ RUN      ] VoxelGrid.RejectsMalformedCoordinates
+[       OK ] VoxelGrid.RejectsMalformedCoordinates (1 ms)
+[----------] 1 test from VoxelGrid (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"VoxelGrid.RejectsMalformedCoordinates" end time: Oct 21 14:32 UTC
+"VoxelGrid.RejectsMalformedCoordinates" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/41 Testing: VoxelGrid.RejectsVoxelIndexOverflow
+8/41 Test: VoxelGrid.RejectsVoxelIndexOverflow
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_tests" "--gtest_filter=VoxelGrid.RejectsVoxelIndexOverflow" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"VoxelGrid.RejectsVoxelIndexOverflow" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = VoxelGrid.RejectsVoxelIndexOverflow
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VoxelGrid
+[ RUN      ] VoxelGrid.RejectsVoxelIndexOverflow
+[       OK ] VoxelGrid.RejectsVoxelIndexOverflow (3 ms)
+[----------] 1 test from VoxelGrid (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (3 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"VoxelGrid.RejectsVoxelIndexOverflow" end time: Oct 21 14:32 UTC
+"VoxelGrid.RejectsVoxelIndexOverflow" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/41 Testing: VoxelGrid.SupportsConfigurableVoxelSize
+9/41 Test: VoxelGrid.SupportsConfigurableVoxelSize
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_tests" "--gtest_filter=VoxelGrid.SupportsConfigurableVoxelSize" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"VoxelGrid.SupportsConfigurableVoxelSize" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = VoxelGrid.SupportsConfigurableVoxelSize
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VoxelGrid
+[ RUN      ] VoxelGrid.SupportsConfigurableVoxelSize
+[       OK ] VoxelGrid.SupportsConfigurableVoxelSize (0 ms)
+[----------] 1 test from VoxelGrid (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"VoxelGrid.SupportsConfigurableVoxelSize" end time: Oct 21 14:32 UTC
+"VoxelGrid.SupportsConfigurableVoxelSize" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/41 Testing: VoxelGrid.GroupsUsingAllThreeAxes
+10/41 Test: VoxelGrid.GroupsUsingAllThreeAxes
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_tests" "--gtest_filter=VoxelGrid.GroupsUsingAllThreeAxes" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"VoxelGrid.GroupsUsingAllThreeAxes" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = VoxelGrid.GroupsUsingAllThreeAxes
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VoxelGrid
+[ RUN      ] VoxelGrid.GroupsUsingAllThreeAxes
+[       OK ] VoxelGrid.GroupsUsingAllThreeAxes (0 ms)
+[----------] 1 test from VoxelGrid (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (2 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"VoxelGrid.GroupsUsingAllThreeAxes" end time: Oct 21 14:32 UTC
+"VoxelGrid.GroupsUsingAllThreeAxes" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/41 Testing: VoxelGrid.RepeatsResultsForIdenticalInput
+11/41 Test: VoxelGrid.RepeatsResultsForIdenticalInput
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_tests" "--gtest_filter=VoxelGrid.RepeatsResultsForIdenticalInput" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"VoxelGrid.RepeatsResultsForIdenticalInput" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = VoxelGrid.RepeatsResultsForIdenticalInput
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VoxelGrid
+[ RUN      ] VoxelGrid.RepeatsResultsForIdenticalInput
+[       OK ] VoxelGrid.RepeatsResultsForIdenticalInput (0 ms)
+[----------] 1 test from VoxelGrid (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"VoxelGrid.RepeatsResultsForIdenticalInput" end time: Oct 21 14:32 UTC
+"VoxelGrid.RepeatsResultsForIdenticalInput" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/41 Testing: PcdLoader.ReadsReorderedFieldsAndPadding
+12/41 Test: PcdLoader.ReadsReorderedFieldsAndPadding
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_tests" "--gtest_filter=PcdLoader.ReadsReorderedFieldsAndPadding" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"PcdLoader.ReadsReorderedFieldsAndPadding" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = PcdLoader.ReadsReorderedFieldsAndPadding
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PcdLoader
+[ RUN      ] PcdLoader.ReadsReorderedFieldsAndPadding
+[       OK ] PcdLoader.ReadsReorderedFieldsAndPadding (2 ms)
+[----------] 1 test from PcdLoader (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (3 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"PcdLoader.ReadsReorderedFieldsAndPadding" end time: Oct 21 14:32 UTC
+"PcdLoader.ReadsReorderedFieldsAndPadding" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/41 Testing: PcdLoader.SupportsOmittedCountAndCRLF
+13/41 Test: PcdLoader.SupportsOmittedCountAndCRLF
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_tests" "--gtest_filter=PcdLoader.SupportsOmittedCountAndCRLF" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"PcdLoader.SupportsOmittedCountAndCRLF" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = PcdLoader.SupportsOmittedCountAndCRLF
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PcdLoader
+[ RUN      ] PcdLoader.SupportsOmittedCountAndCRLF
+[       OK ] PcdLoader.SupportsOmittedCountAndCRLF (0 ms)
+[----------] 1 test from PcdLoader (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"PcdLoader.SupportsOmittedCountAndCRLF" end time: Oct 21 14:32 UTC
+"PcdLoader.SupportsOmittedCountAndCRLF" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/41 Testing: PcdLoader.EmptyFrame
+14/41 Test: PcdLoader.EmptyFrame
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_tests" "--gtest_filter=PcdLoader.EmptyFrame" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"PcdLoader.EmptyFrame" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = PcdLoader.EmptyFrame
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PcdLoader
+[ RUN      ] PcdLoader.EmptyFrame
+[       OK ] PcdLoader.EmptyFrame (0 ms)
+[----------] 1 test from PcdLoader (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"PcdLoader.EmptyFrame" end time: Oct 21 14:32 UTC
+"PcdLoader.EmptyFrame" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/41 Testing: PcdLoader.RejectsTruncatedPayload
+15/41 Test: PcdLoader.RejectsTruncatedPayload
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_tests" "--gtest_filter=PcdLoader.RejectsTruncatedPayload" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"PcdLoader.RejectsTruncatedPayload" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = PcdLoader.RejectsTruncatedPayload
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PcdLoader
+[ RUN      ] PcdLoader.RejectsTruncatedPayload
+[       OK ] PcdLoader.RejectsTruncatedPayload (1 ms)
+[----------] 1 test from PcdLoader (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"PcdLoader.RejectsTruncatedPayload" end time: Oct 21 14:32 UTC
+"PcdLoader.RejectsTruncatedPayload" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/41 Testing: PcdLoader.RejectsMissingFile
+16/41 Test: PcdLoader.RejectsMissingFile
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_tests" "--gtest_filter=PcdLoader.RejectsMissingFile" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"PcdLoader.RejectsMissingFile" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = PcdLoader.RejectsMissingFile
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PcdLoader
+[ RUN      ] PcdLoader.RejectsMissingFile
+[       OK ] PcdLoader.RejectsMissingFile (1 ms)
+[----------] 1 test from PcdLoader (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"PcdLoader.RejectsMissingFile" end time: Oct 21 14:32 UTC
+"PcdLoader.RejectsMissingFile" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/41 Testing: PcdLoader.RejectsMalformedHeaders
+17/41 Test: PcdLoader.RejectsMalformedHeaders
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_tests" "--gtest_filter=PcdLoader.RejectsMalformedHeaders" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"PcdLoader.RejectsMalformedHeaders" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = PcdLoader.RejectsMalformedHeaders
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PcdLoader
+[ RUN      ] PcdLoader.RejectsMalformedHeaders
+[       OK ] PcdLoader.RejectsMalformedHeaders (1 ms)
+[----------] 1 test from PcdLoader (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (2 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"PcdLoader.RejectsMalformedHeaders" end time: Oct 21 14:32 UTC
+"PcdLoader.RejectsMalformedHeaders" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/41 Testing: PcdLoader.RejectsMissingOrDuplicateXYZ
+18/41 Test: PcdLoader.RejectsMissingOrDuplicateXYZ
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_tests" "--gtest_filter=PcdLoader.RejectsMissingOrDuplicateXYZ" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"PcdLoader.RejectsMissingOrDuplicateXYZ" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = PcdLoader.RejectsMissingOrDuplicateXYZ
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PcdLoader
+[ RUN      ] PcdLoader.RejectsMissingOrDuplicateXYZ
+[       OK ] PcdLoader.RejectsMissingOrDuplicateXYZ (4 ms)
+[----------] 1 test from PcdLoader (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (4 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"PcdLoader.RejectsMissingOrDuplicateXYZ" end time: Oct 21 14:32 UTC
+"PcdLoader.RejectsMissingOrDuplicateXYZ" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/41 Testing: PcdLoader.RejectsNonfiniteCoordinates
+19/41 Test: PcdLoader.RejectsNonfiniteCoordinates
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_tests" "--gtest_filter=PcdLoader.RejectsNonfiniteCoordinates" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"PcdLoader.RejectsNonfiniteCoordinates" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = PcdLoader.RejectsNonfiniteCoordinates
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PcdLoader
+[ RUN      ] PcdLoader.RejectsNonfiniteCoordinates
+[       OK ] PcdLoader.RejectsNonfiniteCoordinates (1 ms)
+[----------] 1 test from PcdLoader (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"PcdLoader.RejectsNonfiniteCoordinates" end time: Oct 21 14:32 UTC
+"PcdLoader.RejectsNonfiniteCoordinates" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/41 Testing: Sequence.SortsDecimalTimestampsNumerically
+20/41 Test: Sequence.SortsDecimalTimestampsNumerically
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_tests" "--gtest_filter=Sequence.SortsDecimalTimestampsNumerically" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"Sequence.SortsDecimalTimestampsNumerically" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = Sequence.SortsDecimalTimestampsNumerically
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Sequence
+[ RUN      ] Sequence.SortsDecimalTimestampsNumerically
+[       OK ] Sequence.SortsDecimalTimestampsNumerically (0 ms)
+[----------] 1 test from Sequence (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Sequence.SortsDecimalTimestampsNumerically" end time: Oct 21 14:32 UTC
+"Sequence.SortsDecimalTimestampsNumerically" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/41 Testing: Sequence.RejectsEmptyDirectoryAndMissingPath
+21/41 Test: Sequence.RejectsEmptyDirectoryAndMissingPath
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_tests" "--gtest_filter=Sequence.RejectsEmptyDirectoryAndMissingPath" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"Sequence.RejectsEmptyDirectoryAndMissingPath" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = Sequence.RejectsEmptyDirectoryAndMissingPath
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Sequence
+[ RUN      ] Sequence.RejectsEmptyDirectoryAndMissingPath
+[       OK ] Sequence.RejectsEmptyDirectoryAndMissingPath (1 ms)
+[----------] 1 test from Sequence (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Sequence.RejectsEmptyDirectoryAndMissingPath" end time: Oct 21 14:32 UTC
+"Sequence.RejectsEmptyDirectoryAndMissingPath" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/41 Testing: Comparison.DetectsCountAndCoordinateMismatch
+22/41 Test: Comparison.DetectsCountAndCoordinateMismatch
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_tests" "--gtest_filter=Comparison.DetectsCountAndCoordinateMismatch" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"Comparison.DetectsCountAndCoordinateMismatch" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = Comparison.DetectsCountAndCoordinateMismatch
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Comparison
+[ RUN      ] Comparison.DetectsCountAndCoordinateMismatch
+[       OK ] Comparison.DetectsCountAndCoordinateMismatch (0 ms)
+[----------] 1 test from Comparison (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Comparison.DetectsCountAndCoordinateMismatch" end time: Oct 21 14:32 UTC
+"Comparison.DetectsCountAndCoordinateMismatch" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/41 Testing: Metrics.EmptyReductionAndNormalReduction
+23/41 Test: Metrics.EmptyReductionAndNormalReduction
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_tests" "--gtest_filter=Metrics.EmptyReductionAndNormalReduction" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"Metrics.EmptyReductionAndNormalReduction" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = Metrics.EmptyReductionAndNormalReduction
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Metrics
+[ RUN      ] Metrics.EmptyReductionAndNormalReduction
+[       OK ] Metrics.EmptyReductionAndNormalReduction (0 ms)
+[----------] 1 test from Metrics (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Metrics.EmptyReductionAndNormalReduction" end time: Oct 21 14:32 UTC
+"Metrics.EmptyReductionAndNormalReduction" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/41 Testing: StudioProcessing.SelectedCPUDoesNotRunCUDA
+24/41 Test: StudioProcessing.SelectedCPUDoesNotRunCUDA
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_tests" "--gtest_filter=StudioProcessing.SelectedCPUDoesNotRunCUDA" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"StudioProcessing.SelectedCPUDoesNotRunCUDA" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = StudioProcessing.SelectedCPUDoesNotRunCUDA
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StudioProcessing
+[ RUN      ] StudioProcessing.SelectedCPUDoesNotRunCUDA
+[       OK ] StudioProcessing.SelectedCPUDoesNotRunCUDA (2 ms)
+[----------] 1 test from StudioProcessing (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (3 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"StudioProcessing.SelectedCPUDoesNotRunCUDA" end time: Oct 21 14:32 UTC
+"StudioProcessing.SelectedCPUDoesNotRunCUDA" time elapsed: 00:00:00
+----------------------------------------------------------
+
+25/41 Testing: StudioProcessing.WorkerQueuesJobsAndPropagatesErrors
+25/41 Test: StudioProcessing.WorkerQueuesJobsAndPropagatesErrors
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_tests" "--gtest_filter=StudioProcessing.WorkerQueuesJobsAndPropagatesErrors" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"StudioProcessing.WorkerQueuesJobsAndPropagatesErrors" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = StudioProcessing.WorkerQueuesJobsAndPropagatesErrors
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StudioProcessing
+[ RUN      ] StudioProcessing.WorkerQueuesJobsAndPropagatesErrors
+[       OK ] StudioProcessing.WorkerQueuesJobsAndPropagatesErrors (3 ms)
+[----------] 1 test from StudioProcessing (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (4 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"StudioProcessing.WorkerQueuesJobsAndPropagatesErrors" end time: Oct 21 14:32 UTC
+"StudioProcessing.WorkerQueuesJobsAndPropagatesErrors" time elapsed: 00:00:00
+----------------------------------------------------------
+
+26/41 Testing: StudioBrowser.CachesTypesAndFiltersBeforeRendering
+26/41 Test: StudioBrowser.CachesTypesAndFiltersBeforeRendering
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_tests" "--gtest_filter=StudioBrowser.CachesTypesAndFiltersBeforeRendering" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"StudioBrowser.CachesTypesAndFiltersBeforeRendering" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = StudioBrowser.CachesTypesAndFiltersBeforeRendering
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StudioBrowser
+[ RUN      ] StudioBrowser.CachesTypesAndFiltersBeforeRendering
+[       OK ] StudioBrowser.CachesTypesAndFiltersBeforeRendering (0 ms)
+[----------] 1 test from StudioBrowser (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"StudioBrowser.CachesTypesAndFiltersBeforeRendering" end time: Oct 21 14:32 UTC
+"StudioBrowser.CachesTypesAndFiltersBeforeRendering" time elapsed: 00:00:00
+----------------------------------------------------------
+
+27/41 Testing: StudioBrowser.DiscoveryAndListingRunOnWorker
+27/41 Test: StudioBrowser.DiscoveryAndListingRunOnWorker
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_tests" "--gtest_filter=StudioBrowser.DiscoveryAndListingRunOnWorker" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"StudioBrowser.DiscoveryAndListingRunOnWorker" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = StudioBrowser.DiscoveryAndListingRunOnWorker
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StudioBrowser
+[ RUN      ] StudioBrowser.DiscoveryAndListingRunOnWorker
+[       OK ] StudioBrowser.DiscoveryAndListingRunOnWorker (1 ms)
+[----------] 1 test from StudioBrowser (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"StudioBrowser.DiscoveryAndListingRunOnWorker" end time: Oct 21 14:32 UTC
+"StudioBrowser.DiscoveryAndListingRunOnWorker" time elapsed: 00:00:00
+----------------------------------------------------------
+
+28/41 Testing: Benchmark.ComputesInterpolatedPercentiles
+28/41 Test: Benchmark.ComputesInterpolatedPercentiles
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_tests" "--gtest_filter=Benchmark.ComputesInterpolatedPercentiles" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"Benchmark.ComputesInterpolatedPercentiles" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = Benchmark.ComputesInterpolatedPercentiles
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Benchmark
+[ RUN      ] Benchmark.ComputesInterpolatedPercentiles
+[       OK ] Benchmark.ComputesInterpolatedPercentiles (0 ms)
+[----------] 1 test from Benchmark (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Benchmark.ComputesInterpolatedPercentiles" end time: Oct 21 14:32 UTC
+"Benchmark.ComputesInterpolatedPercentiles" time elapsed: 00:00:00
+----------------------------------------------------------
+
+29/41 Testing: Benchmark.RerunsInputAndSavesSeparateReportsAutomatically
+29/41 Test: Benchmark.RerunsInputAndSavesSeparateReportsAutomatically
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_tests" "--gtest_filter=Benchmark.RerunsInputAndSavesSeparateReportsAutomatically" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"Benchmark.RerunsInputAndSavesSeparateReportsAutomatically" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = Benchmark.RerunsInputAndSavesSeparateReportsAutomatically
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Benchmark
+[ RUN      ] Benchmark.RerunsInputAndSavesSeparateReportsAutomatically
+[       OK ] Benchmark.RerunsInputAndSavesSeparateReportsAutomatically (2109 ms)
+[----------] 1 test from Benchmark (2109 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (2110 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   2.19 sec
+----------------------------------------------------------
+Test Passed.
+"Benchmark.RerunsInputAndSavesSeparateReportsAutomatically" end time: Oct 21 14:32 UTC
+"Benchmark.RerunsInputAndSavesSeparateReportsAutomatically" time elapsed: 00:00:02
+----------------------------------------------------------
+
+30/41 Testing: Benchmark.UsesLoadedFrameSnapshotWithoutRequiringFileAgain
+30/41 Test: Benchmark.UsesLoadedFrameSnapshotWithoutRequiringFileAgain
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_tests" "--gtest_filter=Benchmark.UsesLoadedFrameSnapshotWithoutRequiringFileAgain" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"Benchmark.UsesLoadedFrameSnapshotWithoutRequiringFileAgain" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = Benchmark.UsesLoadedFrameSnapshotWithoutRequiringFileAgain
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Benchmark
+[ RUN      ] Benchmark.UsesLoadedFrameSnapshotWithoutRequiringFileAgain
+[       OK ] Benchmark.UsesLoadedFrameSnapshotWithoutRequiringFileAgain (284 ms)
+[----------] 1 test from Benchmark (284 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (284 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.37 sec
+----------------------------------------------------------
+Test Passed.
+"Benchmark.UsesLoadedFrameSnapshotWithoutRequiringFileAgain" end time: Oct 21 14:32 UTC
+"Benchmark.UsesLoadedFrameSnapshotWithoutRequiringFileAgain" time elapsed: 00:00:00
+----------------------------------------------------------
+
+31/41 Testing: Benchmark.CancellationIsExplicitAndInvalidSettingsFail
+31/41 Test: Benchmark.CancellationIsExplicitAndInvalidSettingsFail
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_tests" "--gtest_filter=Benchmark.CancellationIsExplicitAndInvalidSettingsFail" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"Benchmark.CancellationIsExplicitAndInvalidSettingsFail" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = Benchmark.CancellationIsExplicitAndInvalidSettingsFail
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Benchmark
+[ RUN      ] Benchmark.CancellationIsExplicitAndInvalidSettingsFail
+[       OK ] Benchmark.CancellationIsExplicitAndInvalidSettingsFail (2 ms)
+[----------] 1 test from Benchmark (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (2 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Benchmark.CancellationIsExplicitAndInvalidSettingsFail" end time: Oct 21 14:32 UTC
+"Benchmark.CancellationIsExplicitAndInvalidSettingsFail" time elapsed: 00:00:00
+----------------------------------------------------------
+
+32/41 Testing: BenchmarkCsv.ParsesQuotedFieldsAndRejectsMalformedRecords
+32/41 Test: BenchmarkCsv.ParsesQuotedFieldsAndRejectsMalformedRecords
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_tests" "--gtest_filter=BenchmarkCsv.ParsesQuotedFieldsAndRejectsMalformedRecords" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"BenchmarkCsv.ParsesQuotedFieldsAndRejectsMalformedRecords" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = BenchmarkCsv.ParsesQuotedFieldsAndRejectsMalformedRecords
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BenchmarkCsv
+[ RUN      ] BenchmarkCsv.ParsesQuotedFieldsAndRejectsMalformedRecords
+[       OK ] BenchmarkCsv.ParsesQuotedFieldsAndRejectsMalformedRecords (0 ms)
+[----------] 1 test from BenchmarkCsv (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"BenchmarkCsv.ParsesQuotedFieldsAndRejectsMalformedRecords" end time: Oct 21 14:32 UTC
+"BenchmarkCsv.ParsesQuotedFieldsAndRejectsMalformedRecords" time elapsed: 00:00:00
+----------------------------------------------------------
+
+33/41 Testing: BenchmarkCsv.RejectsUnsupportedHeadersAndInvalidTimings
+33/41 Test: BenchmarkCsv.RejectsUnsupportedHeadersAndInvalidTimings
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_tests" "--gtest_filter=BenchmarkCsv.RejectsUnsupportedHeadersAndInvalidTimings" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"BenchmarkCsv.RejectsUnsupportedHeadersAndInvalidTimings" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = BenchmarkCsv.RejectsUnsupportedHeadersAndInvalidTimings
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BenchmarkCsv
+[ RUN      ] BenchmarkCsv.RejectsUnsupportedHeadersAndInvalidTimings
+[       OK ] BenchmarkCsv.RejectsUnsupportedHeadersAndInvalidTimings (1 ms)
+[----------] 1 test from BenchmarkCsv (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"BenchmarkCsv.RejectsUnsupportedHeadersAndInvalidTimings" end time: Oct 21 14:32 UTC
+"BenchmarkCsv.RejectsUnsupportedHeadersAndInvalidTimings" time elapsed: 00:00:00
+----------------------------------------------------------
+
+34/41 Testing: Playback.ProcessesOneFrameWithSelectedBackend
+34/41 Test: Playback.ProcessesOneFrameWithSelectedBackend
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_tests" "--gtest_filter=Playback.ProcessesOneFrameWithSelectedBackend" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"Playback.ProcessesOneFrameWithSelectedBackend" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = Playback.ProcessesOneFrameWithSelectedBackend
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Playback
+[ RUN      ] Playback.ProcessesOneFrameWithSelectedBackend
+[       OK ] Playback.ProcessesOneFrameWithSelectedBackend (0 ms)
+[----------] 1 test from Playback (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Playback.ProcessesOneFrameWithSelectedBackend" end time: Oct 21 14:32 UTC
+"Playback.ProcessesOneFrameWithSelectedBackend" time elapsed: 00:00:00
+----------------------------------------------------------
+
+35/41 Testing: Playback.DiscoversMultipleClipsInOrder
+35/41 Test: Playback.DiscoversMultipleClipsInOrder
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_tests" "--gtest_filter=Playback.DiscoversMultipleClipsInOrder" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"Playback.DiscoversMultipleClipsInOrder" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = Playback.DiscoversMultipleClipsInOrder
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Playback
+[ RUN      ] Playback.DiscoversMultipleClipsInOrder
+[       OK ] Playback.DiscoversMultipleClipsInOrder (2 ms)
+[----------] 1 test from Playback (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (2 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Playback.DiscoversMultipleClipsInOrder" end time: Oct 21 14:32 UTC
+"Playback.DiscoversMultipleClipsInOrder" time elapsed: 00:00:00
+----------------------------------------------------------
+
+36/41 Testing: CudaVoxelGrid.MatchesReferenceAcrossVoxelSizesAndAxes
+36/41 Test: CudaVoxelGrid.MatchesReferenceAcrossVoxelSizesAndAxes
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_cuda_tests" "--gtest_filter=CudaVoxelGrid.MatchesReferenceAcrossVoxelSizesAndAxes" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"CudaVoxelGrid.MatchesReferenceAcrossVoxelSizesAndAxes" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = CudaVoxelGrid.MatchesReferenceAcrossVoxelSizesAndAxes
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from CudaVoxelGrid
+[ RUN      ] CudaVoxelGrid.MatchesReferenceAcrossVoxelSizesAndAxes
+[       OK ] CudaVoxelGrid.MatchesReferenceAcrossVoxelSizesAndAxes (434 ms)
+[----------] 1 test from CudaVoxelGrid (434 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (434 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.53 sec
+----------------------------------------------------------
+Test Passed.
+"CudaVoxelGrid.MatchesReferenceAcrossVoxelSizesAndAxes" end time: Oct 21 14:32 UTC
+"CudaVoxelGrid.MatchesReferenceAcrossVoxelSizesAndAxes" time elapsed: 00:00:00
+----------------------------------------------------------
+
+37/41 Testing: CudaVoxelGrid.MatchesLargeSyntheticFrame
+37/41 Test: CudaVoxelGrid.MatchesLargeSyntheticFrame
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_cuda_tests" "--gtest_filter=CudaVoxelGrid.MatchesLargeSyntheticFrame" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"CudaVoxelGrid.MatchesLargeSyntheticFrame" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = CudaVoxelGrid.MatchesLargeSyntheticFrame
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from CudaVoxelGrid
+[ RUN      ] CudaVoxelGrid.MatchesLargeSyntheticFrame
+[       OK ] CudaVoxelGrid.MatchesLargeSyntheticFrame (277 ms)
+[----------] 1 test from CudaVoxelGrid (277 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (277 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.36 sec
+----------------------------------------------------------
+Test Passed.
+"CudaVoxelGrid.MatchesLargeSyntheticFrame" end time: Oct 21 14:32 UTC
+"CudaVoxelGrid.MatchesLargeSyntheticFrame" time elapsed: 00:00:00
+----------------------------------------------------------
+
+38/41 Testing: CudaVoxelGrid.EmptyAndInvalidInput
+38/41 Test: CudaVoxelGrid.EmptyAndInvalidInput
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_cuda_tests" "--gtest_filter=CudaVoxelGrid.EmptyAndInvalidInput" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"CudaVoxelGrid.EmptyAndInvalidInput" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = CudaVoxelGrid.EmptyAndInvalidInput
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from CudaVoxelGrid
+[ RUN      ] CudaVoxelGrid.EmptyAndInvalidInput
+[       OK ] CudaVoxelGrid.EmptyAndInvalidInput (3 ms)
+[----------] 1 test from CudaVoxelGrid (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (3 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"CudaVoxelGrid.EmptyAndInvalidInput" end time: Oct 21 14:32 UTC
+"CudaVoxelGrid.EmptyAndInvalidInput" time elapsed: 00:00:00
+----------------------------------------------------------
+
+39/41 Testing: CudaVoxelGrid.ReusesAndGrowsWorkspaceAcrossFrames
+39/41 Test: CudaVoxelGrid.ReusesAndGrowsWorkspaceAcrossFrames
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_cuda_tests" "--gtest_filter=CudaVoxelGrid.ReusesAndGrowsWorkspaceAcrossFrames" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"CudaVoxelGrid.ReusesAndGrowsWorkspaceAcrossFrames" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = CudaVoxelGrid.ReusesAndGrowsWorkspaceAcrossFrames
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from CudaVoxelGrid
+[ RUN      ] CudaVoxelGrid.ReusesAndGrowsWorkspaceAcrossFrames
+[       OK ] CudaVoxelGrid.ReusesAndGrowsWorkspaceAcrossFrames (279 ms)
+[----------] 1 test from CudaVoxelGrid (279 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (279 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.36 sec
+----------------------------------------------------------
+Test Passed.
+"CudaVoxelGrid.ReusesAndGrowsWorkspaceAcrossFrames" end time: Oct 21 14:32 UTC
+"CudaVoxelGrid.ReusesAndGrowsWorkspaceAcrossFrames" time elapsed: 00:00:00
+----------------------------------------------------------
+
+40/41 Testing: CudaVoxelGrid.WideRangesUseCollisionFreeFallback
+40/41 Test: CudaVoxelGrid.WideRangesUseCollisionFreeFallback
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_cuda_tests" "--gtest_filter=CudaVoxelGrid.WideRangesUseCollisionFreeFallback" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"CudaVoxelGrid.WideRangesUseCollisionFreeFallback" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = CudaVoxelGrid.WideRangesUseCollisionFreeFallback
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from CudaVoxelGrid
+[ RUN      ] CudaVoxelGrid.WideRangesUseCollisionFreeFallback
+[       OK ] CudaVoxelGrid.WideRangesUseCollisionFreeFallback (269 ms)
+[----------] 1 test from CudaVoxelGrid (269 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (269 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.35 sec
+----------------------------------------------------------
+Test Passed.
+"CudaVoxelGrid.WideRangesUseCollisionFreeFallback" end time: Oct 21 14:32 UTC
+"CudaVoxelGrid.WideRangesUseCollisionFreeFallback" time elapsed: 00:00:00
+----------------------------------------------------------
+
+41/41 Testing: CudaVoxelGrid.PackedKeysHandleLargeSignedOffsets
+41/41 Test: CudaVoxelGrid.PackedKeysHandleLargeSignedOffsets
+Command: "/mnt/d/Annie-Proj/CloudForge/build/demo/cloudforge_cuda_tests" "--gtest_filter=CudaVoxelGrid.PackedKeysHandleLargeSignedOffsets" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/Annie-Proj/CloudForge/build/demo
+"CudaVoxelGrid.PackedKeysHandleLargeSignedOffsets" start time: Oct 21 14:32 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = CudaVoxelGrid.PackedKeysHandleLargeSignedOffsets
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from CudaVoxelGrid
+[ RUN      ] CudaVoxelGrid.PackedKeysHandleLargeSignedOffsets
+[       OK ] CudaVoxelGrid.PackedKeysHandleLargeSignedOffsets (274 ms)
+[----------] 1 test from CudaVoxelGrid (274 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (274 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.35 sec
+----------------------------------------------------------
+Test Passed.
+"CudaVoxelGrid.PackedKeysHandleLargeSignedOffsets" end time: Oct 21 14:32 UTC
+"CudaVoxelGrid.PackedKeysHandleLargeSignedOffsets" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 21 14:32 UTC

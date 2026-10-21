@@ -9,7 +9,7 @@ The studio uses a long-lived worker (`apps/processing.hpp`) and futures; only th
 UI thread calls GLFW/OpenGL. Jobs are serialized, and exceptions propagate through
 futures into visible errors. Closing waits for any current job to finish. The
 worker lifetime owns the thread-local CUDA workspace, avoiding per-job teardown.
-Streams, vectors, GPU buffers, windows and contexts use RAII cleanup.
+Host vectors, GPU buffers, windows and contexts use RAII cleanup.
 
 ## File input and playback
 
@@ -21,18 +21,25 @@ frame mode uses a snapshot of the loaded point data; sequence mode takes the loa
 timestamp-ordered path list. Parameters and results remain together in this window.
 Each click recalculates and automatically creates a separate CSV report. It
 warms both, alternates measured calls, compares output, and reports a winner
-only if correctness passes. It reports warm medians, first calls and whole-job
-elapsed time separately. No faster-backend claim is guessed from hardware type.
+only if correctness passes. Benchmarks report warmed medians and sample variation;
+the main view distinguishes loading/job time from processing latency. Warm-up and
+context startup are excluded from warmed benchmark samples and require separate
+measurement. No faster-backend claim is guessed from hardware type.
 
 Directory listing and frame discovery run on the worker. The browser caches each
 entry's name and type once; sorting and drawing never query the filesystem. This
 avoids repeated Windows-drive metadata requests blocking the UI under WSL.
 
-Directories are nonrecursive and decimal timestamp stems sort numerically, with
-lexical fallback. Playback holds one frame/result set in RAM, uses a fixed target
-rate without dropping frames, and retains camera orientation. It does not replay
-exact source timestamp intervals. The GUI can orbit/zoom and repaint during worker
-processing; building voxel inspection geometry happens briefly on the UI thread.
+A directory with PCDs forms one clip. A parent without its own PCDs can contain
+immediate clip folders, sorted by folder name; deeper trees are not recursively
+walked. Decimal frame timestamp stems sort numerically, with lexical fallback.
+Playback retains the visible pair and an in-flight processing result rather than
+preloading the whole recording. It uses one processing call per frame, a fixed
+target rate without dropping frames, and stable camera framing within a clip.
+Both panels use the displayed result index rather than a pending frame index.
+Exact source timestamp intervals are not replayed. The GUI can repaint during
+normal worker processing; both windows pause drawing during benchmark timing.
+Building voxel inspection geometry still happens briefly on the UI thread.
 
 ## PCD contract
 
@@ -105,11 +112,35 @@ wireframes are its actual occupied voxels. Every global occupied voxel still
 produces one output point, even though only local boxes are drawn. Global counts
 stay in summary cards and local counts/cropping are labeled explicitly. Empty
 cells are omitted. This makes density reduction visible while preserving the
-expected overall shape. The detail location can shift between moving frames.
+expected overall shape. The local region remains fixed within a clip and refits
+at clip transitions, rather than following the densest group every frame.
 
 GLFW/OpenGL was selected after the packaged Open3D GUI failed in its ImGui texture
 backend. A built-in bitmap font avoids runtime font resources. WSL rendering on
 this laptop uses llvmpipe, independently of NVIDIA CUDA compute. Software drawing
-can compete for CPU resources, so benchmark runs are performed with the viewer
-closed. Compatibility OpenGL 2.1 is appropriate for the prototype, not a claim of
+can compete for CPU resources, so in-app benchmarks pause drawing and headless
+benchmarks avoid launching rendering work. Native Windows drawing was verified on
+AMD Radeon Graphics; this is separate from the selected processing backend.
+Compatibility OpenGL 2.1 is appropriate for the prototype, not a claim of
 modern high-throughput GPU rendering. See `performance.md` for measured limits.
+
+## Using the core from C++
+
+Link the `cloudforge_core` CMake target and include the public headers. A minimal
+CPU integration is:
+
+```cpp
+#include "cloudforge/pcd_io.hpp"
+#include "cloudforge/point_cloud.hpp"
+
+auto input = cloudforge::load_pcd("frame.pcd");
+auto centroids = cloudforge::downsample(input, 0.1);
+```
+
+The return value owns its data and the original is retained. For optional backend
+dispatch, include `cloudforge/engine.hpp` and call
+`cloudforge::process(input, size, cloudforge::Backend::cuda)` only in an appropriate
+CUDA-enabled environment. `cuda_backend_compiled()` reports build inclusion, not
+a complete runtime device-health check. Errors propagate through exceptions; the
+viewer catches job exceptions and displays them. The API does not serialize the
+returned cloud or preserve extra source attributes.

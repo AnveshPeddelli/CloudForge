@@ -1,0 +1,30 @@
+{
+  "pdf/cloudForge-portfolio-article.pdf": {
+    "bytes": 233259,
+    "sha256": "a09c7ecaefcc49a3ec6e3d17667871e1712f64ef8dc9cb00884ff5a31fa763ad"
+  },
+  "pdf/cloudForge-technical-report.pdf": {
+    "bytes": 326228,
+    "sha256": "3f7d3b65782a0bdb75d8169e5802e48c62275439bd95c5af1180d5f30efa1137"
+  },
+  "video/cloudForge-demo.mp4": {
+    "bytes": 9772088,
+    "sha256": "566b134186be5f5137abde657e0314ed159b8d087f5ad6ec8739a8a4e6473f1f"
+  },
+  "video/cloudForge-demo.srt": {
+    "bytes": 1423,
+    "sha256": "901b1d35f62ddd93244b7244584d47b681f9d227e3e5f56e5d665746a5945839"
+  },
+  "video/voiceover-guide.md": {
+    "bytes": 2013,
+    "sha256": "26c6781c445e493961b18968ff17d9a962e3527d68d0b68982736ab3903ee2ed"
+  },
+  "cloudForge-Windows-CPU.zip": {
+    "bytes": 249273,
+    "sha256": "078ead4d87b90a50689eb35e8817d8379f73811218725527506555d9c4db862a"
+  },
+  "evidence/benchmark-session.csv": {
+    "bytes": 159181,
+    "sha256": "eb46c074ffd3ae62c549aae57b82deea722519e4f757350c5440f33c2b6ca21a"
+  }
+}

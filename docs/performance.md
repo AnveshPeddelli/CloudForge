@@ -1,7 +1,52 @@
 # Recorded performance, profiling and optimization
 
 Measured 21 October 2026 on the development laptop. These are observed results,
-not representative claims for other machines or input sizes.
+not representative claims for other machines or input sizes. The later raw-sample
+session and earlier summary/profiler studies below use different protocols and
+aggregation methods; they must not be silently interchanged.
+
+## Later session: 900 measured pairs
+
+Raw evidence: [session-2026-10-21-raw.csv](../benchmarks/session-2026-10-21-raw.csv).
+Machine-readable aggregates:
+[session-2026-10-21-summary.json](../benchmarks/session-2026-10-21-summary.json).
+These are copies of the delivery session evidence, not newly generated timings.
+
+- First 30 timestamp-ordered real frames; voxel size `0.1`.
+- Three warm-ups per backend per frame, in fixed CPU-then-CUDA order.
+- Thirty measured calls per backend per frame; measured order alternates.
+- 900 paired samples, each checked outside the timer; all comparisons passed.
+- CPU is the single-threaded ordered-map reference; no parallel CPU baseline was tested.
+- Completed-call timing includes validation, required allocation, transfers and
+  GPU completion; file I/O, rendering, warm-ups, checks and CSV writing are excluded.
+- Ryzen 7 7735HS, RTX 4050 Laptop, CUDA 13.2.86, driver 595.79, Release WSL build.
+  Power, clocks, thermals and OS background activity were not controlled.
+
+| Backend | P10 ms | Pooled median ms | P90 ms |
+|---|---:|---:|---:|
+| CPU | 4.933 | 5.343 | 7.684 |
+| CUDA | 0.966 | 1.205 | 1.762 |
+
+The ratio of pooled medians is **4.43x**. The ratio of summed CPU and CUDA times
+is **4.49x**; a single frame's ratio can differ from both. P10-P90 includes workload
+variation between frames as well as repetition variation and is not a confidence
+interval. Maximum observed coordinate error was approximately `1.78e-15`.
+
+The raw CSV uses schema 1, with comment metadata and one row per repetition. The
+older files below contain per-frame summaries. The app's raw-report importer does
+not treat summary rows as repeated samples.
+
+Reproduce the protocol with an equivalent supported recording:
+
+```bash
+./build/demo/cloudforge_benchmark "DataSets/my-clip" --frames 30 --repeat 30 --warmup 3 --voxel 0.1 --csv build/reproduced-session.csv
+```
+
+The exact scan files must be obtained separately. Processing FPS is not playback
+FPS. This session does not establish downstream accuracy, memory/storage savings,
+energy savings or industrial deployment impact.
+
+## Historical optimization studies
 
 ## Environment
 
@@ -91,7 +136,9 @@ at voxel 0.1 are 55,518 input / 20,345 output. At voxel 0.3 they are 55,518 / 9,
 vary; baseline and optimized runs were not simultaneous. The CPU reference was not
 changed. These paired-run observations do not establish a universal GPU advantage.
 
-The studio shows first-call costs and total job duration as well as warm medians.
+The current studio distinguishes loading/job duration from processing latency;
+its dedicated benchmark reports warm medians and variation. First-call costs
+require separate attention rather than being inferred from warmed samples.
 The first CUDA call in a new process can take over one second for runtime/context
 and module initialization, even though subsequent calls take a few milliseconds.
 For one-off small clouds, startup may outweigh all processing savings.

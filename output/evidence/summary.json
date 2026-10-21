@@ -1,0 +1,10 @@
+{
+  "frames": 30,
+  "samples": 900,
+  "cpu_median_ms": 5.3434285,
+  "cuda_median_ms": 1.2049189999999999,
+  "ratio_medians": 4.434678596652556,
+  "ratio_totals": 4.487655340246342,
+  "max_error": 1.7763568394002505e-15,
+  "passed": true
+}

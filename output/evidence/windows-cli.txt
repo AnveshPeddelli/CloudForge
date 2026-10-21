@@ -1,0 +1,5 @@
+File: DataSets/Oxford-Spires=Dataset/lidar-clouds/lidar-clouds/1710256033.970548000.pcd
+Voxel size: 0.1
+Original points: 55518
+Simplified points: 20345
+Reduction: 63.3542

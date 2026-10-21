@@ -1,0 +1,75 @@
+Test project D:/Annie-Proj/CloudForge/build/windows-cpu
+      Start  1: VoxelGrid.ComputesCentroidForSharedVoxel
+ 1/35 Test  #1: VoxelGrid.ComputesCentroidForSharedVoxel .....................   Passed    0.02 sec
+      Start  2: VoxelGrid.SeparatesNegativeAndNonnegativeVoxels
+ 2/35 Test  #2: VoxelGrid.SeparatesNegativeAndNonnegativeVoxels ..............   Passed    0.01 sec
+      Start  3: VoxelGrid.HandlesEmptyInput
+ 3/35 Test  #3: VoxelGrid.HandlesEmptyInput ..................................   Passed    0.02 sec
+      Start  4: VoxelGrid.HandlesExactBoundaries
+ 4/35 Test  #4: VoxelGrid.HandlesExactBoundaries .............................   Passed    0.01 sec
+      Start  5: VoxelGrid.CollapsesDuplicatePoints
+ 5/35 Test  #5: VoxelGrid.CollapsesDuplicatePoints ...........................   Passed    0.01 sec
+      Start  6: VoxelGrid.RejectsInvalidVoxelSizes
+ 6/35 Test  #6: VoxelGrid.RejectsInvalidVoxelSizes ...........................   Passed    0.01 sec
+      Start  7: VoxelGrid.RejectsMalformedCoordinates
+ 7/35 Test  #7: VoxelGrid.RejectsMalformedCoordinates ........................   Passed    0.01 sec
+      Start  8: VoxelGrid.RejectsVoxelIndexOverflow
+ 8/35 Test  #8: VoxelGrid.RejectsVoxelIndexOverflow ..........................   Passed    0.01 sec
+      Start  9: VoxelGrid.SupportsConfigurableVoxelSize
+ 9/35 Test  #9: VoxelGrid.SupportsConfigurableVoxelSize ......................   Passed    0.02 sec
+      Start 10: VoxelGrid.GroupsUsingAllThreeAxes
+10/35 Test #10: VoxelGrid.GroupsUsingAllThreeAxes ............................   Passed    0.01 sec
+      Start 11: VoxelGrid.RepeatsResultsForIdenticalInput
+11/35 Test #11: VoxelGrid.RepeatsResultsForIdenticalInput ....................   Passed    0.01 sec
+      Start 12: PcdLoader.ReadsReorderedFieldsAndPadding
+12/35 Test #12: PcdLoader.ReadsReorderedFieldsAndPadding .....................   Passed    0.02 sec
+      Start 13: PcdLoader.SupportsOmittedCountAndCRLF
+13/35 Test #13: PcdLoader.SupportsOmittedCountAndCRLF ........................   Passed    0.01 sec
+      Start 14: PcdLoader.EmptyFrame
+14/35 Test #14: PcdLoader.EmptyFrame .........................................   Passed    0.02 sec
+      Start 15: PcdLoader.RejectsTruncatedPayload
+15/35 Test #15: PcdLoader.RejectsTruncatedPayload ............................   Passed    0.01 sec
+      Start 16: PcdLoader.RejectsMissingFile
+16/35 Test #16: PcdLoader.RejectsMissingFile .................................   Passed    0.01 sec
+      Start 17: PcdLoader.RejectsMalformedHeaders
+17/35 Test #17: PcdLoader.RejectsMalformedHeaders ............................   Passed    0.05 sec
+      Start 18: PcdLoader.RejectsMissingOrDuplicateXYZ
+18/35 Test #18: PcdLoader.RejectsMissingOrDuplicateXYZ .......................   Passed    0.04 sec
+      Start 19: PcdLoader.RejectsNonfiniteCoordinates
+19/35 Test #19: PcdLoader.RejectsNonfiniteCoordinates ........................   Passed    0.02 sec
+      Start 20: Sequence.SortsDecimalTimestampsNumerically
+20/35 Test #20: Sequence.SortsDecimalTimestampsNumerically ...................   Passed    0.02 sec
+      Start 21: Sequence.RejectsEmptyDirectoryAndMissingPath
+21/35 Test #21: Sequence.RejectsEmptyDirectoryAndMissingPath .................   Passed    0.02 sec
+      Start 22: Comparison.DetectsCountAndCoordinateMismatch
+22/35 Test #22: Comparison.DetectsCountAndCoordinateMismatch .................   Passed    0.02 sec
+      Start 23: Metrics.EmptyReductionAndNormalReduction
+23/35 Test #23: Metrics.EmptyReductionAndNormalReduction .....................   Passed    0.01 sec
+      Start 24: StudioProcessing.SelectedCPUDoesNotRunCUDA
+24/35 Test #24: StudioProcessing.SelectedCPUDoesNotRunCUDA ...................   Passed    0.02 sec
+      Start 25: StudioProcessing.WorkerQueuesJobsAndPropagatesErrors
+25/35 Test #25: StudioProcessing.WorkerQueuesJobsAndPropagatesErrors .........   Passed    0.02 sec
+      Start 26: StudioBrowser.CachesTypesAndFiltersBeforeRendering
+26/35 Test #26: StudioBrowser.CachesTypesAndFiltersBeforeRendering ...........   Passed    0.02 sec
+      Start 27: StudioBrowser.DiscoveryAndListingRunOnWorker
+27/35 Test #27: StudioBrowser.DiscoveryAndListingRunOnWorker .................   Passed    0.02 sec
+      Start 28: Benchmark.ComputesInterpolatedPercentiles
+28/35 Test #28: Benchmark.ComputesInterpolatedPercentiles ....................   Passed    0.01 sec
+      Start 29: Benchmark.RerunsInputAndSavesSeparateReportsAutomatically
+29/35 Test #29: Benchmark.RerunsInputAndSavesSeparateReportsAutomatically ....   Passed    0.04 sec
+      Start 30: Benchmark.UsesLoadedFrameSnapshotWithoutRequiringFileAgain
+30/35 Test #30: Benchmark.UsesLoadedFrameSnapshotWithoutRequiringFileAgain ...   Passed    0.02 sec
+      Start 31: Benchmark.CancellationIsExplicitAndInvalidSettingsFail
+31/35 Test #31: Benchmark.CancellationIsExplicitAndInvalidSettingsFail .......   Passed    0.02 sec
+      Start 32: BenchmarkCsv.ParsesQuotedFieldsAndRejectsMalformedRecords
+32/35 Test #32: BenchmarkCsv.ParsesQuotedFieldsAndRejectsMalformedRecords ....   Passed    0.01 sec
+      Start 33: BenchmarkCsv.RejectsUnsupportedHeadersAndInvalidTimings
+33/35 Test #33: BenchmarkCsv.RejectsUnsupportedHeadersAndInvalidTimings ......   Passed    0.02 sec
+      Start 34: Playback.ProcessesOneFrameWithSelectedBackend
+34/35 Test #34: Playback.ProcessesOneFrameWithSelectedBackend ................   Passed    0.02 sec
+      Start 35: Playback.DiscoversMultipleClipsInOrder
+35/35 Test #35: Playback.DiscoversMultipleClipsInOrder .......................   Passed    0.02 sec
+
+100% tests passed, 0 tests failed out of 35
+
+Total Test time (real) =   0.69 sec

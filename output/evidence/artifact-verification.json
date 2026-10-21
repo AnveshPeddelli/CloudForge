@@ -1,0 +1,16 @@
+{
+  "cloudForge-portfolio-article.pdf": {
+    "pages": 4,
+    "characters": 5454,
+    "bytes": 233259
+  },
+  "cloudForge-technical-report.pdf": {
+    "pages": 8,
+    "characters": 11313,
+    "bytes": 326228
+  },
+  "raw_capture_counts": {
+    "windows": 60,
+    "cuda": 60
+  }
+}

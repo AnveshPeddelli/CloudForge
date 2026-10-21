@@ -1,0 +1,122 @@
+OpenGL renderer: AMD Radeon(TM) Graphics
+Processed frame 1/60 backend=cpu compared=0 input=55518 simplified=9943
+Screenshot: "build/media-native-frames\\frame-00000.bmp"
+Processed frame 2/60 backend=cpu compared=0 input=55415 simplified=9900
+Screenshot: "build/media-native-frames\\frame-00001.bmp"
+Processed frame 3/60 backend=cpu compared=0 input=55495 simplified=9910
+Screenshot: "build/media-native-frames\\frame-00002.bmp"
+Processed frame 4/60 backend=cpu compared=0 input=55628 simplified=9926
+Screenshot: "build/media-native-frames\\frame-00003.bmp"
+Processed frame 5/60 backend=cpu compared=0 input=55726 simplified=9903
+Screenshot: "build/media-native-frames\\frame-00004.bmp"
+Processed frame 6/60 backend=cpu compared=0 input=55780 simplified=9872
+Screenshot: "build/media-native-frames\\frame-00005.bmp"
+Processed frame 7/60 backend=cpu compared=0 input=56026 simplified=9900
+Screenshot: "build/media-native-frames\\frame-00006.bmp"
+Processed frame 8/60 backend=cpu compared=0 input=56027 simplified=10025
+Screenshot: "build/media-native-frames\\frame-00007.bmp"
+Processed frame 9/60 backend=cpu compared=0 input=55990 simplified=9909
+Screenshot: "build/media-native-frames\\frame-00008.bmp"
+Processed frame 10/60 backend=cpu compared=0 input=56070 simplified=9983
+Screenshot: "build/media-native-frames\\frame-00009.bmp"
+Processed frame 11/60 backend=cpu compared=0 input=56026 simplified=10045
+Screenshot: "build/media-native-frames\\frame-00010.bmp"
+Processed frame 12/60 backend=cpu compared=0 input=56005 simplified=9995
+Screenshot: "build/media-native-frames\\frame-00011.bmp"
+Processed frame 13/60 backend=cpu compared=0 input=55906 simplified=10030
+Screenshot: "build/media-native-frames\\frame-00012.bmp"
+Processed frame 14/60 backend=cpu compared=0 input=55914 simplified=10134
+Screenshot: "build/media-native-frames\\frame-00013.bmp"
+Processed frame 15/60 backend=cpu compared=0 input=55878 simplified=10087
+Screenshot: "build/media-native-frames\\frame-00014.bmp"
+Processed frame 16/60 backend=cpu compared=0 input=55860 simplified=10094
+Screenshot: "build/media-native-frames\\frame-00015.bmp"
+Processed frame 17/60 backend=cpu compared=0 input=55894 simplified=10148
+Screenshot: "build/media-native-frames\\frame-00016.bmp"
+Processed frame 18/60 backend=cpu compared=0 input=55821 simplified=10240
+Screenshot: "build/media-native-frames\\frame-00017.bmp"
+Processed frame 19/60 backend=cpu compared=0 input=55725 simplified=10177
+Screenshot: "build/media-native-frames\\frame-00018.bmp"
+Processed frame 20/60 backend=cpu compared=0 input=55644 simplified=10286
+Screenshot: "build/media-native-frames\\frame-00019.bmp"
+Processed frame 21/60 backend=cpu compared=0 input=55588 simplified=10246
+Screenshot: "build/media-native-frames\\frame-00020.bmp"
+Processed frame 22/60 backend=cpu compared=0 input=55748 simplified=10280
+Screenshot: "build/media-native-frames\\frame-00021.bmp"
+Processed frame 23/60 backend=cpu compared=0 input=55826 simplified=10361
+Screenshot: "build/media-native-frames\\frame-00022.bmp"
+Processed frame 24/60 backend=cpu compared=0 input=55353 simplified=10290
+Screenshot: "build/media-native-frames\\frame-00023.bmp"
+Processed frame 25/60 backend=cpu compared=0 input=55514 simplified=10484
+Screenshot: "build/media-native-frames\\frame-00024.bmp"
+Processed frame 26/60 backend=cpu compared=0 input=55640 simplified=10489
+Screenshot: "build/media-native-frames\\frame-00025.bmp"
+Processed frame 27/60 backend=cpu compared=0 input=55580 simplified=10390
+Screenshot: "build/media-native-frames\\frame-00026.bmp"
+Processed frame 28/60 backend=cpu compared=0 input=55908 simplified=10538
+Screenshot: "build/media-native-frames\\frame-00027.bmp"
+Processed frame 29/60 backend=cpu compared=0 input=55272 simplified=10553
+Screenshot: "build/media-native-frames\\frame-00028.bmp"
+Processed frame 30/60 backend=cpu compared=0 input=55362 simplified=10511
+Screenshot: "build/media-native-frames\\frame-00029.bmp"
+Processed frame 31/60 backend=cpu compared=0 input=55427 simplified=10658
+Screenshot: "build/media-native-frames\\frame-00030.bmp"
+Processed frame 32/60 backend=cpu compared=0 input=55205 simplified=10658
+Screenshot: "build/media-native-frames\\frame-00031.bmp"
+Processed frame 33/60 backend=cpu compared=0 input=55524 simplified=10856
+Screenshot: "build/media-native-frames\\frame-00032.bmp"
+Processed frame 34/60 backend=cpu compared=0 input=55446 simplified=10880
+Screenshot: "build/media-native-frames\\frame-00033.bmp"
+Processed frame 35/60 backend=cpu compared=0 input=55657 simplified=10901
+Screenshot: "build/media-native-frames\\frame-00034.bmp"
+Processed frame 36/60 backend=cpu compared=0 input=55273 simplified=10893
+Screenshot: "build/media-native-frames\\frame-00035.bmp"
+Processed frame 37/60 backend=cpu compared=0 input=55362 simplified=10830
+Screenshot: "build/media-native-frames\\frame-00036.bmp"
+Processed frame 38/60 backend=cpu compared=0 input=55318 simplified=10835
+Screenshot: "build/media-native-frames\\frame-00037.bmp"
+Processed frame 39/60 backend=cpu compared=0 input=55348 simplified=10923
+Screenshot: "build/media-native-frames\\frame-00038.bmp"
+Processed frame 40/60 backend=cpu compared=0 input=55390 simplified=10979
+Screenshot: "build/media-native-frames\\frame-00039.bmp"
+Processed frame 41/60 backend=cpu compared=0 input=55090 simplified=10910
+Screenshot: "build/media-native-frames\\frame-00040.bmp"
+Processed frame 42/60 backend=cpu compared=0 input=54970 simplified=10941
+Screenshot: "build/media-native-frames\\frame-00041.bmp"
+Processed frame 43/60 backend=cpu compared=0 input=54762 simplified=10988
+Screenshot: "build/media-native-frames\\frame-00042.bmp"
+Processed frame 44/60 backend=cpu compared=0 input=54640 simplified=10909
+Screenshot: "build/media-native-frames\\frame-00043.bmp"
+Processed frame 45/60 backend=cpu compared=0 input=54943 simplified=11021
+Screenshot: "build/media-native-frames\\frame-00044.bmp"
+Processed frame 46/60 backend=cpu compared=0 input=55030 simplified=11002
+Screenshot: "build/media-native-frames\\frame-00045.bmp"
+Processed frame 47/60 backend=cpu compared=0 input=54870 simplified=11047
+Screenshot: "build/media-native-frames\\frame-00046.bmp"
+Processed frame 48/60 backend=cpu compared=0 input=55037 simplified=11040
+Screenshot: "build/media-native-frames\\frame-00047.bmp"
+Processed frame 49/60 backend=cpu compared=0 input=54875 simplified=11076
+Screenshot: "build/media-native-frames\\frame-00048.bmp"
+Processed frame 50/60 backend=cpu compared=0 input=54514 simplified=11061
+Screenshot: "build/media-native-frames\\frame-00049.bmp"
+Processed frame 51/60 backend=cpu compared=0 input=54796 simplified=11211
+Screenshot: "build/media-native-frames\\frame-00050.bmp"
+Processed frame 52/60 backend=cpu compared=0 input=54764 simplified=11092
+Screenshot: "build/media-native-frames\\frame-00051.bmp"
+Processed frame 53/60 backend=cpu compared=0 input=54958 simplified=11247
+Screenshot: "build/media-native-frames\\frame-00052.bmp"
+Processed frame 54/60 backend=cpu compared=0 input=54825 simplified=11222
+Screenshot: "build/media-native-frames\\frame-00053.bmp"
+Processed frame 55/60 backend=cpu compared=0 input=55056 simplified=11134
+Screenshot: "build/media-native-frames\\frame-00054.bmp"
+Processed frame 56/60 backend=cpu compared=0 input=55021 simplified=11242
+Screenshot: "build/media-native-frames\\frame-00055.bmp"
+Processed frame 57/60 backend=cpu compared=0 input=54666 simplified=11194
+Screenshot: "build/media-native-frames\\frame-00056.bmp"
+Processed frame 58/60 backend=cpu compared=0 input=54740 simplified=11199
+Screenshot: "build/media-native-frames\\frame-00057.bmp"
+Processed frame 59/60 backend=cpu compared=0 input=54606 simplified=11079
+Screenshot: "build/media-native-frames\\frame-00058.bmp"
+Processed frame 60/60 backend=cpu compared=0 input=54722 simplified=11056
+Screenshot: "build/media-native-frames\\frame-00059.bmp"
+Screenshot: "output/images/windows-playback.bmp"

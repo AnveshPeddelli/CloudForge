@@ -1,0 +1,3 @@
+OpenGL renderer: AMD Radeon(TM) Graphics
+Processed frame 1/1 backend=cpu compared=0 input=55518 simplified=9943
+Screenshot: "output/images/windows-detail.bmp"

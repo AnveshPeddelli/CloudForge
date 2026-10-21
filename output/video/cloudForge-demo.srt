@@ -1,0 +1,43 @@
+1
+00:00:00,000 --> 00:00:08,000
+A C++20 point-cloud player with an optional CUDA processing backend.
+
+2
+00:00:08,000 --> 00:00:18,000
+Load a PCD file or a sequence. Both views always show the same completed frame.
+
+3
+00:00:18,000 --> 00:00:30,000
+Divide space into cells. Group points by cell, then output one centroid per occupied voxel.
+
+4
+00:00:30,000 --> 00:00:42,000
+Actual native Windows CPU app frames, replayed at 10 FPS. Both views stay synchronized.
+
+5
+00:00:42,000 --> 00:00:54,000
+Actual WSL CUDA app frames. The rendering backend is separate from the compute backend.
+
+6
+00:00:54,000 --> 00:01:06,000
+Local detail makes density changes visible. The crop counts are separate from the global counts.
+
+7
+00:01:06,000 --> 00:01:18,000
+A tested CPU reference anchors the CUDA implementation. A worker keeps processing off the UI thread.
+
+8
+00:01:18,000 --> 00:01:28,000
+Warm up, alternate backend order, check every output pair, and keep every measured sample in CSV.
+
+9
+00:01:28,000 --> 00:01:40,000
+30 frames, 30 repetitions, 900 checks passed. This result is specific to the workload and laptop.
+
+10
+00:01:40,000 --> 00:01:50,000
+35 native Windows tests passed. The WSL CUDA build passed 41. Native Windows CUDA still needs its toolkit.
+
+11
+00:01:50,000 --> 00:02:00,000
+Next: workload scaling, bounded prefetch, per-stage profiling and native Windows CUDA validation.
