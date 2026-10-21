@@ -127,6 +127,27 @@ ctest --preset cpu-release
 
 This preset does not build the viewer. See the build guide to enable a CPU viewer.
 
+## Get LiDAR data
+
+Start with the **Oxford Spires Dataset**, used for this project's demonstration:
+
+- [Official dataset website and download links](https://ori-drs.github.io/datasets/oxford-spires/)
+- [Hugging Face dataset files](https://huggingface.co/datasets/ori-drs/oxford_spires_dataset/tree/main)
+- [Official download tools and instructions](https://github.com/ori-drs/oxford_spires_dataset#download)
+
+Choose **one sequence**, then its `raw/` LiDAR point-cloud download
+(`lidar-clouds`), and extract the timestamp-named `.pcd` frames into
+`DataSets/oxford-spires/`. Start with a short consecutive subset. Camera images,
+ROS bags, calibration and benchmark bundles are unnecessary for cloudForge's
+frame downsampling/playback workflow. Do not download the entire dataset to start.
+
+In the app, click **Open PCD / Folder** and choose the extracted folder that
+contains the `.pcd` files. One file gives a single-frame comparison; a sequence
+of frames enables playback. These are 3D scans, not ordinary images or videos.
+
+See [Dataset download and preparation](docs/datasets.md) for step-by-step
+instructions, format requirements, folder layout and licensing.
+
 ## First use
 
 1. Select **CPU** or **CUDA** in a build that supports it.

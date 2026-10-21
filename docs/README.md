@@ -10,6 +10,7 @@ processing, a desktop viewer and a repeatable benchmark workflow.
 |---|---|
 | Understand the project and what it can do | [Project README](../README.md) |
 | Build or run it on Windows or Ubuntu/WSL | [Getting started](getting-started.md) |
+| Find and prepare LiDAR recordings | [Dataset download and preparation](datasets.md) |
 | Load data, play clips or interpret graphs | [User guide](user-guide.md) |
 | Understand practical uses and impact | [Applications and impact](applications-and-impact.md) |
 | Understand implementation decisions | [Design decisions](design.md) |
