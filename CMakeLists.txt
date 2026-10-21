@@ -1,94 +1,96 @@
 cmake_minimum_required(VERSION 3.24)
-
-project(cloudForge VERSION 0.1.0 LANGUAGES CXX)
-option(CLOUDFORGE_ENABLE_CUDA "Build CUDA components" OFF)
-
+project(cloudForge VERSION 0.3.0 LANGUAGES CXX)
+option(CLOUDFORGE_ENABLE_CUDA "Build CUDA backend" OFF)
+option(CLOUDFORGE_BUILD_VIEWER "Build GLFW/OpenGL desktop viewer" OFF)
+option(CLOUDFORGE_FETCH_DEPS "Fetch pinned GLFW/GoogleTest when packages are unavailable" OFF)
+if(CLOUDFORGE_FETCH_DEPS)
+    include(FetchContent)
+    if(CLOUDFORGE_BUILD_VIEWER)
+        find_package(glfw3 CONFIG QUIET)
+        if(NOT TARGET glfw)
+            set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
+            set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
+            set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
+            set(GLFW_INSTALL OFF CACHE BOOL "" FORCE)
+            FetchContent_Declare(glfw GIT_REPOSITORY https://github.com/glfw/glfw.git GIT_TAG 3.4 GIT_SHALLOW TRUE)
+            FetchContent_MakeAvailable(glfw)
+        endif()
+    endif()
+endif()
+function(cloudforge_warnings target)
+    if(MSVC)
+        target_compile_options(${target} PRIVATE /W4 /permissive-)
+    else()
+        target_compile_options(${target} PRIVATE -Wall -Wextra -Wpedantic)
+    endif()
+endfunction()
 if(CLOUDFORGE_ENABLE_CUDA)
+    if(NOT DEFINED CMAKE_CUDA_ARCHITECTURES)
+        set(CMAKE_CUDA_ARCHITECTURES native)
+    endif()
     enable_language(CUDA)
-
-    add_executable(cloudforge_cuda_check
-        apps/cuda_check.cu
-    )
-
-    set_target_properties(cloudforge_cuda_check PROPERTIES
-    CUDA_STANDARD 20
-    CUDA_STANDARD_REQUIRED ON
-    CUDA_EXTENSIONS OFF
-    )
-
-        add_library(cloudforge_cuda
-        src/voxel_grid_cuda.cu
-    )
-
+    add_library(cloudforge_cuda src/voxel_grid_cuda.cu)
     target_include_directories(cloudforge_cuda PUBLIC include)
     target_compile_features(cloudforge_cuda PUBLIC cxx_std_20)
-
     set_target_properties(cloudforge_cuda PROPERTIES
-        CUDA_STANDARD 20
-        CUDA_STANDARD_REQUIRED ON
-        CUDA_EXTENSIONS OFF
-        CXX_EXTENSIONS OFF
-    )
-
+        CUDA_STANDARD 20 CUDA_STANDARD_REQUIRED ON CUDA_EXTENSIONS OFF CXX_EXTENSIONS OFF)
+    add_executable(cloudforge_cuda_check apps/cuda_check.cu)
+    set_target_properties(cloudforge_cuda_check PROPERTIES
+        CUDA_STANDARD 20 CUDA_STANDARD_REQUIRED ON CUDA_EXTENSIONS OFF)
 endif()
-
-# Reusable processing library
 add_library(cloudforge_core
-    src/voxel_grid.cpp
-    src/synthetic.cpp
-    src/pcd_io.cpp
-)
-
+    src/voxel_grid.cpp src/synthetic.cpp src/pcd_io.cpp src/engine.cpp)
 target_include_directories(cloudforge_core PUBLIC include)
 target_compile_features(cloudforge_core PUBLIC cxx_std_20)
-
-set_target_properties(cloudforge_core PROPERTIES
-    CXX_EXTENSIONS OFF
-)
-
-target_compile_options(cloudforge_core PRIVATE
-    -Wall
-    -Wextra
-    -Wpedantic
-)
-
-# Demo application
+set_target_properties(cloudforge_core PROPERTIES CXX_EXTENSIONS OFF)
+cloudforge_warnings(cloudforge_core)
+if(CLOUDFORGE_ENABLE_CUDA)
+    target_compile_definitions(cloudforge_core PRIVATE CLOUDFORGE_HAS_CUDA=1)
+    target_link_libraries(cloudforge_core PUBLIC cloudforge_cuda)
+endif()
 add_executable(cloudforge apps/main.cpp)
-
 target_link_libraries(cloudforge PRIVATE cloudforge_core)
-
+cloudforge_warnings(cloudforge)
+add_executable(cloudforge_benchmark apps/benchmark.cpp)
+target_link_libraries(cloudforge_benchmark PRIVATE cloudforge_core)
+cloudforge_warnings(cloudforge_benchmark)
 if(CLOUDFORGE_ENABLE_CUDA)
     add_executable(cloudforge_compare apps/compare.cpp)
-    target_link_libraries(cloudforge_compare PRIVATE
-        cloudforge_core cloudforge_cuda)
-    set_target_properties(cloudforge_compare PROPERTIES CXX_EXTENSIONS OFF)
+    target_link_libraries(cloudforge_compare PRIVATE cloudforge_core)
+    cloudforge_warnings(cloudforge_compare)
 endif()
-
-set_target_properties(cloudforge PROPERTIES
-    CXX_EXTENSIONS OFF
-)
-
-target_compile_options(cloudforge PRIVATE
-    -Wall
-    -Wextra
-    -Wpedantic
-)
-
-# Automated tests
+if(CLOUDFORGE_BUILD_VIEWER)
+    find_package(Threads REQUIRED)
+    if(NOT TARGET glfw)
+        find_package(glfw3 CONFIG REQUIRED)
+    endif()
+    find_package(OpenGL REQUIRED)
+    add_executable(cloudforge_viewer apps/viewer.cpp)
+    target_link_libraries(cloudforge_viewer PRIVATE cloudforge_core glfw OpenGL::GL Threads::Threads)
+    cloudforge_warnings(cloudforge_viewer)
+endif()
 include(CTest)
-
 if(BUILD_TESTING)
-    find_package(GTest REQUIRED)
-
-    add_executable(cloudforge_tests
-        tests/voxel_grid_test.cpp
-    )
-
-    target_link_libraries(cloudforge_tests PRIVATE
-        cloudforge_core
-        GTest::gtest_main
-    )
-
+    find_package(Threads REQUIRED)
+    if(CLOUDFORGE_FETCH_DEPS)
+        find_package(GTest CONFIG QUIET)
+        if(NOT TARGET GTest::gtest_main)
+            set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+            FetchContent_Declare(googletest GIT_REPOSITORY https://github.com/google/googletest.git GIT_TAG v1.17.0 GIT_SHALLOW TRUE)
+            FetchContent_MakeAvailable(googletest)
+        endif()
+    else()
+        find_package(GTest CONFIG REQUIRED)
+    endif()
+    add_executable(cloudforge_tests tests/voxel_grid_test.cpp tests/pcd_io_test.cpp tests/engine_test.cpp tests/app_test.cpp)
+    target_link_libraries(cloudforge_tests PRIVATE cloudforge_core GTest::gtest_main Threads::Threads)
+    cloudforge_warnings(cloudforge_tests)
     include(GoogleTest)
     gtest_discover_tests(cloudforge_tests)
+    if(CLOUDFORGE_ENABLE_CUDA)
+        add_executable(cloudforge_cuda_tests tests/cuda_test.cpp)
+        target_link_libraries(cloudforge_cuda_tests PRIVATE cloudforge_core GTest::gtest_main)
+        cloudforge_warnings(cloudforge_cuda_tests)
+        gtest_discover_tests(cloudforge_cuda_tests)
+    endif()
 endif()

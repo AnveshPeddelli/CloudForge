@@ -12,6 +12,8 @@
 #include <stdexcept>
 #include <string>
 #include <vector>
+#include <charconv>
+#include <set>
 
 namespace cloudforge
 {
@@ -33,6 +35,15 @@ namespace cloudforge
             std::size_t point_stride{};
         };
 
+        std::size_t parse_size(const std::string& text)
+        {
+            std::size_t value{};
+            const auto result = std::from_chars(text.data(), text.data() + text.size(), value);
+            if (result.ec != std::errc{} || result.ptr != text.data() + text.size())
+                throw std::runtime_error("Invalid nonnegative PCD integer: " + text);
+            return value;
+        }
+
         Header read_header(std::istream& stream)
         {
             Header header;
@@ -43,6 +54,9 @@ namespace cloudforge
 
             bool found_points = false;
             bool found_data = false;
+            bool found_count = false;
+            std::set<std::string> seen;
+            std::size_t width{}, height{};
 
             std::string line;
 
@@ -56,6 +70,8 @@ namespace cloudforge
                 {
                     continue;
                 }
+                if (!seen.insert(keyword).second)
+                    throw std::runtime_error("Duplicate PCD header entry: " + keyword);
                 if(keyword == "FIELDS")
                 {
                     std::string name;
@@ -69,39 +85,50 @@ namespace cloudforge
                 }
                 else if(keyword == "SIZE")
                 {
-                    std::size_t size;
+                    std::string size;
                     
                     while(values >> size)
                     {
-                        sizes.push_back(size);
+                        sizes.push_back(parse_size(size));
                     }
                 }
                 else if(keyword == "TYPE")
                 {
-                    char type;
+                    std::string type;
 
                     while(values>> type)
                     {
-                        types.push_back(type);
+                        if (type.size() != 1 || type.find_first_not_of("FIU") != std::string::npos)
+                            throw std::runtime_error("Invalid PCD TYPE");
+                        types.push_back(type.front());
                     }
                 }
                 else if(keyword == "COUNT")
                 {
-                    std::size_t count;
+                    found_count = true;
+                    std::string count;
 
                     while(values>> count)
                     {
-                        counts.push_back(count);
+                        counts.push_back(parse_size(count));
                     }
                 }
                 else if(keyword == "POINTS")
                 {
-                    if(!(values >> header.point_count))
+                    std::string text, extra;
+                    if (!(values >> text) || (values >> extra))
                     {
                         throw std::runtime_error("Invalid PCD POINTS value");
                     }
-
+                    header.point_count = parse_size(text);
                     found_points = true;
+                }
+                else if (keyword == "WIDTH" || keyword == "HEIGHT")
+                {
+                    std::string text, extra;
+                    if (!(values >> text) || (values >> extra)) throw std::runtime_error("Invalid PCD dimensions");
+                    if (keyword == "WIDTH") width = parse_size(text);
+                    else height = parse_size(text);
                 }
                 else if(keyword == "DATA")
                 {
@@ -131,7 +158,7 @@ namespace cloudforge
             }
 
             // PCD permits omitted COUNT; each field then has one element.
-            if (counts.empty())
+            if (!found_count)
             {
                 counts.assign(field_count, 1);
             }
@@ -156,6 +183,9 @@ namespace cloudforge
                 {
                     throw std::runtime_error("PCD field size/count must be positive");
                 }
+                if ((field.size != 1 && field.size != 2 && field.size != 4 && field.size != 8)
+                    || (field.type == 'F' && field.size != 4 && field.size != 8))
+                    throw std::runtime_error("Unsupported PCD field size/type");
 
                 if (field.count > (maximum - header.point_stride) / field.size)
                 {
@@ -164,6 +194,10 @@ namespace cloudforge
 
                 header.point_stride += field.size * field.count;
             }
+            if (seen.contains("WIDTH") != seen.contains("HEIGHT"))
+                throw std::runtime_error("PCD WIDTH and HEIGHT must appear together");
+            if (seen.contains("WIDTH") && (height == 0 || width > maximum / height || width * height != header.point_count))
+                throw std::runtime_error("PCD dimensions disagree with POINTS");
 
             return header;
         }
@@ -217,7 +251,7 @@ namespace cloudforge
 
             if(!found)
             {
-                throw std::runtime_error("Missing PCD coordinate filed: " + name);
+                throw std::runtime_error("Missing PCD coordinate field: " + name);
             }
 
             return offset;
@@ -262,29 +296,32 @@ namespace cloudforge
             throw std::runtime_error("Cannot seek to PCD binary payload");
         }
 
-        std::vector<char> record(header.point_stride);
+        if (header.point_count == 0) return {};
+        if (header.point_count > static_cast<std::uintmax_t>(std::numeric_limits<std::streamsize>::max()) / header.point_stride)
+            throw std::runtime_error("PCD payload is too large for one read");
+        const auto payload_size = header.point_count * header.point_stride;
+        // One bulk read avoids thousands of small reads across WSL's /mnt/d.
+        std::vector<char> payload(payload_size);
+        if (!file.read(payload.data(), static_cast<std::streamsize>(payload.size())))
+            throw std::runtime_error("Failed reading PCD binary payload");
 
         PointCloud points;
         points.reserve(header.point_count);
 
-        const auto read_coordinate = [&](std::size_t offset)
+        const auto read_coordinate = [&](std::size_t record_start, std::size_t offset)
         {
             float value{};
-            std::memcpy(&value, record.data() + offset, sizeof(value));
+            std::memcpy(&value, payload.data() + record_start + offset, sizeof(value));
             return static_cast<double>(value);
         };
 
         for(std::size_t i = 0; i < header.point_count; ++i)
         {
-            if(!file.read(record.data(), static_cast<std::streamsize>(record.size())))
-            {
-                throw std::runtime_error("Failed reading PCD point " + std::to_string(i));
-            }
-
+            const auto record_start = i * header.point_stride;
             const Point point{
-                read_coordinate(x_offset),
-                read_coordinate(y_offset),
-                read_coordinate(z_offset)
+                read_coordinate(record_start, x_offset),
+                read_coordinate(record_start, y_offset),
+                read_coordinate(record_start, z_offset)
             };
 
             if(!std::isfinite(point.x) ||

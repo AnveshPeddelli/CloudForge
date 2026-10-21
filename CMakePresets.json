@@ -1,0 +1,53 @@
+{
+  "version": 5,
+  "cmakeMinimumRequired": {"major": 3, "minor": 24, "patch": 0},
+  "configurePresets": [
+    {
+      "name": "windows-cpu-release",
+      "displayName": "Native Windows CPU viewer (MSVC 2022)",
+      "generator": "Visual Studio 17 2022",
+      "architecture": "x64",
+      "binaryDir": "${sourceDir}/build/windows-cpu",
+      "cacheVariables": {
+        "BUILD_TESTING": "ON",
+        "CLOUDFORGE_ENABLE_CUDA": "OFF",
+        "CLOUDFORGE_BUILD_VIEWER": "ON",
+        "CLOUDFORGE_FETCH_DEPS": "ON",
+        "FETCHCONTENT_UPDATES_DISCONNECTED": "ON"
+      }
+    },
+    {
+      "name": "cpu-release",
+      "displayName": "CPU Release (no CUDA or viewer required)",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/cpu-release",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "BUILD_TESTING": "ON",
+        "CLOUDFORGE_ENABLE_CUDA": "OFF",
+        "CLOUDFORGE_BUILD_VIEWER": "OFF"
+      }
+    },
+    {
+      "name": "cuda-release",
+      "inherits": "cpu-release",
+      "displayName": "CUDA Release + desktop viewer",
+      "binaryDir": "${sourceDir}/build/demo",
+      "cacheVariables": {
+        "CLOUDFORGE_ENABLE_CUDA": "ON",
+        "CLOUDFORGE_BUILD_VIEWER": "ON",
+        "CMAKE_CUDA_ARCHITECTURES": "native"
+      }
+    }
+  ],
+  "buildPresets": [
+    {"name": "windows-cpu-release", "configurePreset": "windows-cpu-release", "configuration": "Release", "jobs": 2},
+    {"name": "cpu-release", "configurePreset": "cpu-release", "jobs": 4},
+    {"name": "cuda-release", "configurePreset": "cuda-release", "jobs": 4}
+  ],
+  "testPresets": [
+    {"name": "windows-cpu-release", "configurePreset": "windows-cpu-release", "configuration": "Release", "output": {"outputOnFailure": true}},
+    {"name": "cpu-release", "configurePreset": "cpu-release", "output": {"outputOnFailure": true}},
+    {"name": "cuda-release", "configurePreset": "cuda-release", "output": {"outputOnFailure": true}}
+  ]
+}
